@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MyToutiaoApp.iml" filepath="$PROJECT_DIR$/MyToutiaoApp.iml" />
+      <module fileurl="file://D:\work\WorkData\MyToutiaoApp.git\MyToutiaoApp.iml" filepath="D:\work\WorkData\MyToutiaoApp.git\MyToutiaoApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyToutiaoApp.git.iml" filepath="$PROJECT_DIR$/MyToutiaoApp.git.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
