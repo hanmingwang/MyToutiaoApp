@@ -1,10 +1,12 @@
-package com.hmw.mytoutiaoapp;
+package com.hmw.mytoutiaoapp.activity;
 
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.internal.BottomNavigationItemView;
+import android.support.design.internal.BottomNavigationMenuView;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentTransaction;
@@ -13,13 +15,22 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.Toolbar;
 import android.view.Display;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.getkeepsafe.taptargetview.TapTarget;
 import com.getkeepsafe.taptargetview.TapTargetSequence;
+import com.hmw.mytoutiaoapp.MediaChannelView;
+import com.hmw.mytoutiaoapp.NewsTabLayout;
+import com.hmw.mytoutiaoapp.PhotoTabLayout;
+import com.hmw.mytoutiaoapp.R;
+import com.hmw.mytoutiaoapp.VideoTabLayout;
 import com.hmw.mytoutiaoapp.base.BaseActivity;
+import com.hmw.mytoutiaoapp.search.activity.SearchActivity;
 import com.hmw.mytoutiaoapp.setting.SettingActivity;
 import com.hmw.mytoutiaoapp.util.SettingUtil;
 import com.hmw.mytoutiaoapp.widget.helper.BottomNavigationViewHelper;
@@ -50,6 +61,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+//        initMessage();
 
         if (savedInstanceState != null) {
             newsTabLayout = (NewsTabLayout) getSupportFragmentManager().findFragmentByTag(NewsTabLayout.class.getName());
@@ -152,6 +164,22 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
 
         nav_view = findViewById(R.id.nav_view);
         nav_view.setNavigationItemSelectedListener(this);
+    }
+
+    private void initMessage() {
+        //获取整个的NavigationView
+        BottomNavigationMenuView menuView = (BottomNavigationMenuView) bottom_navigation.getChildAt(0);
+        //这里就是获取所添加的每一个Tab(或者叫menu)，
+        View tab = menuView.getChildAt(3);
+        BottomNavigationItemView itemView = (BottomNavigationItemView) tab;
+        //加载我们的角标View，新创建的一个布局
+        View badge = LayoutInflater.from(this).inflate(R.layout.menu_badge, menuView, false);
+        //添加到Tab上
+        itemView.addView(badge);
+        TextView textView = badge.findViewById(R.id.tv_msg_count);
+        textView.setText("1");
+//        //无消息时可以将它隐藏即可
+//        textView.setVisibility(View.VISIBLE);
     }
 
     @Override
@@ -301,7 +329,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_search) {
-//            startActivity(new Intent(MainActivity.this, SearchActivity.class));
+            startActivity(new Intent(MainActivity.this, SearchActivity.class));
         }
         return super.onOptionsItemSelected(item);
     }

@@ -75,15 +75,15 @@ dependencies {
     implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.1'
     // RxBinding
     implementation 'com.jakewharton.rxbinding2:rxbinding-appcompat-v7:2.0.0'
-
+    // 持久化 Cookie
+    implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
     // AutoDispose  解决RxJava内存泄漏
     implementation 'com.uber.autodispose:autodispose:0.7.0'
     implementation 'com.uber.autodispose:autodispose-android:0.7.0'
     implementation 'com.uber.autodispose:autodispose-android-archcomponents:0.7.0'
 
     // 响应式排版布局  实现搜索功能
-    implementation 'com.google.android:flexbox:0.2.7'
-
+    implementation 'com.google.android:flexbox:0.3.2'
     // 滑动返回 https://oss.sonatype.org/content/repositories/snapshots/com/r0adkll/slidableactivity/
     implementation 'com.r0adkll:slidableactivity:2.0.6'
     // MD dialog

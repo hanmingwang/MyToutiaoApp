@@ -16,7 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.afollestad.materialdialogs.color.CircleView;
-import com.hmw.mytoutiaoapp.Constant;
+import com.hmw.mytoutiaoapp.config.Constant;
 import com.hmw.mytoutiaoapp.R;
 import com.hmw.mytoutiaoapp.util.SettingUtil;
 import com.r0adkll.slidr.Slidr;

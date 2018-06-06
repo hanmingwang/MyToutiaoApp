@@ -1,9 +1,11 @@
-package com.hmw.mytoutiaoapp;
+package com.hmw.mytoutiaoapp.config;
 
 import android.app.Application;
 import android.content.Context;
 import android.support.v7.app.AppCompatDelegate;
 
+import com.hmw.mytoutiaoapp.BuildConfig;
+import com.hmw.mytoutiaoapp.SdkManager;
 import com.hmw.mytoutiaoapp.util.SettingUtil;
 
 import java.util.Calendar;

@@ -1,6 +1,8 @@
-package com.hmw.mytoutiaoapp;
+package com.hmw.mytoutiaoapp.config;
 
 import android.graphics.Color;
+
+import com.hmw.mytoutiaoapp.R;
 
 /**
  * Created by han on 2018/6/4.
@@ -38,5 +40,8 @@ public class Constant {
 
     public static final int NEWS_CHANNEL_ENABLE = 1;
     public static final int NEWS_CHANNEL_DISABLE = 0;
+
+    //
+    public static final String HOST = "http://toutiao.com/";
 
 }

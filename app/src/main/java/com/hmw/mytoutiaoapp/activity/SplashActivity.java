@@ -1,4 +1,4 @@
-package com.hmw.mytoutiaoapp;
+package com.hmw.mytoutiaoapp.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
