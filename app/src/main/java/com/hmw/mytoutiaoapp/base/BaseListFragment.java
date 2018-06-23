@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.hmw.mytoutiaoapp.R;
-import com.hmw.mytoutiaoapp.loading.LoadingEndBean;
+import com.hmw.mytoutiaoapp.loading.bean.LoadingEndBean;
 import com.hmw.mytoutiaoapp.util.RxBus;
 import com.hmw.mytoutiaoapp.util.SettingUtil;
 

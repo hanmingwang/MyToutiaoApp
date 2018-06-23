@@ -9,7 +9,7 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
     <application
-        android:name=".config.InitApp"
+        android:name=".InitApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -79,7 +79,52 @@
         </activity>
 
         <activity
-            android:name=".search.activity.SearchActivity"
+            android:name=".search.SearchActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:theme="@style/AppTheme.NoActionBar.Slidable"/>
+
+        <activity
+            android:name=".news.channel.NewsChannelActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="@string/title_item_drag"
+            android:theme="@style/AppTheme.NoActionBar.Slidable"/>
+
+        <activity
+            android:name=".news.content.NewsContentActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="@string/title_news_content"
+            android:theme="@style/AppTheme.NoActionBar.Slidable"/>
+
+        <activity
+            android:name=".news.comment.NewsCommentActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="@string/title_comment"
+            android:theme="@style/AppTheme.NoActionBar.Slidable"/>
+
+        <activity
+            android:name=".wenda.content.WendaContentActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:theme="@style/AppTheme.NoActionBar.Slidable"/>
+
+        <activity
+            android:name=".wenda.detail.WendaDetailActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="@string/title_wenda_detail"
+            android:theme="@style/AppTheme.NoActionBar.Slidable"/>
+
+        <activity
+            android:name=".video.VideoContentActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="@string/title_video_content"
+            android:theme="@style/AppTheme.NoActionBar.Slidable"/>
+
+        <activity
+            android:name=".media.MediaHomeActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:theme="@style/AppTheme.NoActionBar.Slidable"/>
+
+        <activity
+            android:name=".activity.ImageBrowserActivity"
             android:configChanges="orientation|screenSize|uiMode"
             android:theme="@style/AppTheme.NoActionBar.Slidable"/>
 

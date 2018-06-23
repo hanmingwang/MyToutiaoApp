@@ -25,12 +25,12 @@ import android.widget.Toast;
 import com.getkeepsafe.taptargetview.TapTarget;
 import com.getkeepsafe.taptargetview.TapTargetSequence;
 import com.hmw.mytoutiaoapp.MediaChannelView;
-import com.hmw.mytoutiaoapp.NewsTabLayout;
+import com.hmw.mytoutiaoapp.news.NewsTabLayout;
 import com.hmw.mytoutiaoapp.PhotoTabLayout;
 import com.hmw.mytoutiaoapp.R;
 import com.hmw.mytoutiaoapp.VideoTabLayout;
 import com.hmw.mytoutiaoapp.base.BaseActivity;
-import com.hmw.mytoutiaoapp.search.activity.SearchActivity;
+import com.hmw.mytoutiaoapp.search.SearchActivity;
 import com.hmw.mytoutiaoapp.setting.SettingActivity;
 import com.hmw.mytoutiaoapp.util.SettingUtil;
 import com.hmw.mytoutiaoapp.widget.helper.BottomNavigationViewHelper;
@@ -61,7 +61,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
-//        initMessage();
+//        initMessage();//添加显示角标
 
         if (savedInstanceState != null) {
             newsTabLayout = (NewsTabLayout) getSupportFragmentManager().findFragmentByTag(NewsTabLayout.class.getName());

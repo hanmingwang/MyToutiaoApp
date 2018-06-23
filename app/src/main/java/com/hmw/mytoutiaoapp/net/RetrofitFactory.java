@@ -9,7 +9,7 @@ import com.franmontiel.persistentcookiejar.persistence.SharedPrefsCookiePersisto
 import com.hmw.mytoutiaoapp.BuildConfig;
 import com.hmw.mytoutiaoapp.SdkManager;
 import com.hmw.mytoutiaoapp.config.Constant;
-import com.hmw.mytoutiaoapp.config.InitApp;
+import com.hmw.mytoutiaoapp.InitApp;
 import com.hmw.mytoutiaoapp.util.NetWorkUtil;
 
 import java.io.File;

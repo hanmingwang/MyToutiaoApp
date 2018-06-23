@@ -5,7 +5,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.hmw.mytoutiaoapp.config.InitApp;
+import com.hmw.mytoutiaoapp.InitApp;
 import com.hmw.mytoutiaoapp.database.table.MediaChannelTable;
 import com.hmw.mytoutiaoapp.database.table.NewsChannelTable;
 import com.hmw.mytoutiaoapp.database.table.SearchHistoryTable;

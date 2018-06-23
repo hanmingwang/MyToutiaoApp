@@ -4,7 +4,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.preference.PreferenceManager;
 
-import com.hmw.mytoutiaoapp.config.InitApp;
+import com.hmw.mytoutiaoapp.InitApp;
 import com.hmw.mytoutiaoapp.R;
 
 
