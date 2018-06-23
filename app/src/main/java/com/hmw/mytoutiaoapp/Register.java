@@ -12,6 +12,8 @@ import com.hmw.mytoutiaoapp.news.binder.NewsArticleImgViewBinder;
 import com.hmw.mytoutiaoapp.news.binder.NewsArticleTextViewBinder;
 import com.hmw.mytoutiaoapp.news.binder.NewsArticleVideoViewBinder;
 import com.hmw.mytoutiaoapp.news.binder.NewsCommentViewBinder;
+import com.hmw.mytoutiaoapp.photo.bean.PhotoArticleBean;
+import com.hmw.mytoutiaoapp.photo.binder.PhotoArticleViewBinder;
 import com.hmw.mytoutiaoapp.search.binder.SearchArticleVideoViewBinder;
 import com.hmw.mytoutiaoapp.wenda.bean.WendaArticleDataBean;
 import com.hmw.mytoutiaoapp.wenda.bean.WendaContentBean;
@@ -98,6 +100,12 @@ public class Register {
                     }
                     return NewsArticleTextViewBinder.class;
                 });
+        adapter.register(LoadingBean.class, new LoadingViewBinder());
+        adapter.register(LoadingEndBean.class, new LoadingEndViewBinder());
+    }
+
+    public static void registerPhotoArticleItem(@NonNull MultiTypeAdapter adapter) {
+        adapter.register(PhotoArticleBean.DataBean.class, new PhotoArticleViewBinder());
         adapter.register(LoadingBean.class, new LoadingViewBinder());
         adapter.register(LoadingEndBean.class, new LoadingEndViewBinder());
     }

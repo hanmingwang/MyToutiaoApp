@@ -128,6 +128,12 @@
             android:configChanges="orientation|screenSize|uiMode"
             android:theme="@style/AppTheme.NoActionBar.Slidable"/>
 
+        <activity
+            android:name=".photo.content.PhotoContentActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="@string/title_photo_content"
+            android:theme="@style/AppTheme.NoActionBar.Slidable"/>
+
     </application>
 
 </manifest>
