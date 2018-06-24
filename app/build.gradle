@@ -103,4 +103,6 @@ dependencies {
     implementation 'com.yanzhenjie:permission:2.0.0-rc3'
     // 解析HTML
     implementation 'org.jsoup:jsoup:1.11.2'
+    // 饺子视频播放器
+    implementation 'cn.jzvd:jiaozivideoplayer:6.2.7'
 }

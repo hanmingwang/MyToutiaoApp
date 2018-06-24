@@ -113,7 +113,7 @@
             android:theme="@style/AppTheme.NoActionBar.Slidable"/>
 
         <activity
-            android:name=".video.VideoContentActivity"
+            android:name=".video.content.VideoContentActivity"
             android:configChanges="orientation|screenSize|uiMode"
             android:label="@string/title_video_content"
             android:theme="@style/AppTheme.NoActionBar.Slidable"/>

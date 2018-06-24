@@ -25,7 +25,7 @@ import com.hmw.mytoutiaoapp.util.IntentAction;
 import com.hmw.mytoutiaoapp.util.NetWorkUtil;
 import com.hmw.mytoutiaoapp.util.SettingUtil;
 import com.hmw.mytoutiaoapp.util.TimeUtil;
-import com.hmw.mytoutiaoapp.video.VideoContentActivity;
+import com.hmw.mytoutiaoapp.video.content.VideoContentActivity;
 import com.hmw.mytoutiaoapp.widget.CircleImageView;
 import com.jakewharton.rxbinding2.view.RxView;
 

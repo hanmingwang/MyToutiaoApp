@@ -28,7 +28,7 @@ import com.hmw.mytoutiaoapp.MediaChannelView;
 import com.hmw.mytoutiaoapp.news.NewsTabLayout;
 import com.hmw.mytoutiaoapp.photo.PhotoTabLayout;
 import com.hmw.mytoutiaoapp.R;
-import com.hmw.mytoutiaoapp.VideoTabLayout;
+import com.hmw.mytoutiaoapp.video.VideoTabLayout;
 import com.hmw.mytoutiaoapp.base.BaseActivity;
 import com.hmw.mytoutiaoapp.search.SearchActivity;
 import com.hmw.mytoutiaoapp.setting.SettingActivity;
