@@ -6,7 +6,7 @@ import android.util.Log;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
 import com.hmw.mytoutiaoapp.InitApp;
-import com.hmw.mytoutiaoapp.media.MediaHomeActivity;
+import com.hmw.mytoutiaoapp.media.home.MediaHomeActivity;
 import com.hmw.mytoutiaoapp.net.RetrofitFactory;
 import com.hmw.mytoutiaoapp.net.api.INewsApi;
 import com.hmw.mytoutiaoapp.net.api.IPhotoApi;

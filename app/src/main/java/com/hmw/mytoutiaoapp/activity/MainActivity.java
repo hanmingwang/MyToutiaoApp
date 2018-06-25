@@ -24,7 +24,7 @@ import android.widget.Toast;
 
 import com.getkeepsafe.taptargetview.TapTarget;
 import com.getkeepsafe.taptargetview.TapTargetSequence;
-import com.hmw.mytoutiaoapp.MediaChannelView;
+import com.hmw.mytoutiaoapp.media.MediaChannelView;
 import com.hmw.mytoutiaoapp.news.NewsTabLayout;
 import com.hmw.mytoutiaoapp.photo.PhotoTabLayout;
 import com.hmw.mytoutiaoapp.R;

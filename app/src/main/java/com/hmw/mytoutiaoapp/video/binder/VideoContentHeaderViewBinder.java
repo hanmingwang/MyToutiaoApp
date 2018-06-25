@@ -14,7 +14,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.hmw.mytoutiaoapp.R;
-import com.hmw.mytoutiaoapp.media.MediaHomeActivity;
+import com.hmw.mytoutiaoapp.media.home.MediaHomeActivity;
 import com.hmw.mytoutiaoapp.news.bean.MultiNewsArticleDataBean;
 import com.hmw.mytoutiaoapp.util.ErrorAction;
 import com.hmw.mytoutiaoapp.util.ImageLoader;

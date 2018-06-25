@@ -119,7 +119,7 @@
             android:theme="@style/AppTheme.NoActionBar.Slidable"/>
 
         <activity
-            android:name=".media.MediaHomeActivity"
+            android:name=".media.home.MediaHomeActivity"
             android:configChanges="orientation|screenSize|uiMode"
             android:theme="@style/AppTheme.NoActionBar.Slidable"/>
 

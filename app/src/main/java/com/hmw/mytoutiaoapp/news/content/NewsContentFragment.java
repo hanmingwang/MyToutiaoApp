@@ -33,7 +33,7 @@ import com.hmw.mytoutiaoapp.util.IntentAction;
 import com.hmw.mytoutiaoapp.R;
 import com.hmw.mytoutiaoapp.base.BaseFragment;
 import com.hmw.mytoutiaoapp.config.Constant;
-import com.hmw.mytoutiaoapp.media.MediaHomeActivity;
+import com.hmw.mytoutiaoapp.media.home.MediaHomeActivity;
 import com.hmw.mytoutiaoapp.news.bean.MultiNewsArticleDataBean;
 import com.hmw.mytoutiaoapp.news.comment.NewsCommentActivity;
 import com.hmw.mytoutiaoapp.util.ErrorAction;

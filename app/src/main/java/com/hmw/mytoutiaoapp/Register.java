@@ -2,10 +2,21 @@ package com.hmw.mytoutiaoapp;
 
 import android.support.annotation.NonNull;
 
+import com.hmw.mytoutiaoapp.interfaces.IOnItemLongClickListener;
 import com.hmw.mytoutiaoapp.loading.bean.LoadingBean;
 import com.hmw.mytoutiaoapp.loading.bean.LoadingEndBean;
 import com.hmw.mytoutiaoapp.loading.binder.LoadingEndViewBinder;
 import com.hmw.mytoutiaoapp.loading.binder.LoadingViewBinder;
+import com.hmw.mytoutiaoapp.media.bean.MediaChannelBean;
+import com.hmw.mytoutiaoapp.media.bean.MediaProfileBean;
+import com.hmw.mytoutiaoapp.media.bean.MediaWendaBean;
+import com.hmw.mytoutiaoapp.media.bean.MultiMediaArticleBean;
+import com.hmw.mytoutiaoapp.media.binder.MediaArticleHeaderViewBinder;
+import com.hmw.mytoutiaoapp.media.binder.MediaArticleImgViewBinder;
+import com.hmw.mytoutiaoapp.media.binder.MediaArticleTextViewBinder;
+import com.hmw.mytoutiaoapp.media.binder.MediaArticleVideoViewBinder;
+import com.hmw.mytoutiaoapp.media.binder.MediaChannelViewBinder;
+import com.hmw.mytoutiaoapp.media.binder.MediaWendaViewBinder;
 import com.hmw.mytoutiaoapp.news.bean.MultiNewsArticleDataBean;
 import com.hmw.mytoutiaoapp.news.bean.NewsCommentBean;
 import com.hmw.mytoutiaoapp.news.binder.NewsArticleImgViewBinder;
@@ -120,6 +131,35 @@ public class Register {
     public static void registerVideoContentItem(@NonNull MultiTypeAdapter adapter) {
         adapter.register(MultiNewsArticleDataBean.class, new VideoContentHeaderViewBinder());
         adapter.register(NewsCommentBean.DataBean.CommentBean.class, new NewsCommentViewBinder());
+        adapter.register(LoadingBean.class, new LoadingViewBinder());
+        adapter.register(LoadingEndBean.class, new LoadingEndViewBinder());
+    }
+
+    public static void registerMediaChannelItem(@NonNull MultiTypeAdapter adapter, @NonNull IOnItemLongClickListener listener) {
+        adapter.register(MediaChannelBean.class, new MediaChannelViewBinder(listener));
+    }
+
+    public static void registerMediaArticleItem(@NonNull MultiTypeAdapter adapter) {
+        adapter.register(MultiMediaArticleBean.DataBean.class)
+                .to(new MediaArticleImgViewBinder(),
+                        new MediaArticleVideoViewBinder(),
+                        new MediaArticleTextViewBinder())
+                .withClassLinker((position, item) -> {
+                    if (item.isHas_video()) {
+                        return MediaArticleVideoViewBinder.class;
+                    }
+                    if (null != item.getImage_list() && item.getImage_list().size() > 0) {
+                        return MediaArticleImgViewBinder.class;
+                    }
+                    return MediaArticleTextViewBinder.class;
+                });
+        adapter.register(MediaProfileBean.DataBean.class, new MediaArticleHeaderViewBinder());
+        adapter.register(LoadingBean.class, new LoadingViewBinder());
+        adapter.register(LoadingEndBean.class, new LoadingEndViewBinder());
+    }
+
+    public static void registerMediaWendaItem(@NonNull MultiTypeAdapter adapter) {
+        adapter.register(MediaWendaBean.AnswerQuestionBean.class, new MediaWendaViewBinder());
         adapter.register(LoadingBean.class, new LoadingViewBinder());
         adapter.register(LoadingEndBean.class, new LoadingEndViewBinder());
     }
