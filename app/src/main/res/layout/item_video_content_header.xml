@@ -140,7 +140,7 @@
         android:paddingRight="16dp"
         android:paddingStart="16dp">
 
-        <com.meiji.toutiao.widget.CircleImageView
+        <com.hmw.mytoutiaoapp.widget.CircleImageView
             android:id="@+id/iv_media_avatar_url"
             android:layout_width="36dp"
             android:layout_height="36dp"

@@ -105,4 +105,6 @@ dependencies {
     implementation 'org.jsoup:jsoup:1.11.2'
     // 饺子视频播放器
     implementation 'cn.jzvd:jiaozivideoplayer:6.2.7'
+    // 带刻度的 SeekBar
+    implementation 'com.github.Jay-Goo:RangeSeekBar:v1.2.2'
 }
